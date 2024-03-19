@@ -1,8 +1,12 @@
 import React, {Component} from 'react'
 
 class Welcome extends Component{
+    
     render() {
-        return <h1>Welcome {this.props.name} Yang Role nya {this.props.roleName}</h1>
+        // Destructuring
+        const {name, roleName} = this.props
+        // const {state1, state2} = this.state
+        return <h1>Welcome {name} Yang Role nya {roleName}</h1>
     }
 }
 
