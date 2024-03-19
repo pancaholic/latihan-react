@@ -11,10 +11,17 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Stylesheets from './components/Stylesheets';
+import InlineStyling from './components/InlineStyling';
+import './components/appStyle.css';
+import styles from './components/appStyle.module.css';
+
 
 function App() {
   return (
     <div className="App">
+      {/* <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1> */}
       {/* <Greet name="Panca" roleName="Manager">
         <p>This is Children Props</p>
       </Greet> */}
@@ -33,7 +40,9 @@ function App() {
       <EventBind/> */}
       {/* <ParentComponent/>
       <UserGreeting/>  */}
-      <NameList/>
+      {/* <NameList/> */}
+      {/* <Stylesheets primary= {false}/> */}
+      {/* <InlineStyling/> */}
       
     </div>
   );
